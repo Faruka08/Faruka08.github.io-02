@@ -2,12 +2,17 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSV検索ページ</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>名前から年齢を検索</h1>
-  <input type="text" id="searchInput" placeholder="名前を入力">
+
+
+  <h1>商品名を入力</h1>
+  <select id="dropdown" onchange="onDropdownChange()">
+    <option value="">--商品を選択--</option>
+  </select>
   <button onclick="searchCSV()">検索</button>
   <p id="result"></p>
 
